@@ -1,0 +1,17 @@
+{
+  "name": "showShamsiTime",
+  "version": "1.0.0",
+  "description": "show time in shamsi format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "stime": "index.js"
+  },
+  "author": "erfan gharib",
+  "license": "ISC",
+  "dependencies": {
+    "shamsi-date-converter": "^1.0.5"
+  }
+}
