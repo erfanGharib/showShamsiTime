@@ -1,7 +1,8 @@
 # Show Shamsi Time
 
 ## Installation
-run <code>npm install -g</code> to make command global
+<code>npm i</code> to install packages
+<code>npm i -g</code> to make command global
 
 ## Run
 run using <code>stime</code> command

@@ -1,4 +1,4 @@
-#! node
+#!/usr/bin/env node
 
 const shamsi       = require('shamsi-date-converter'),
       shamsiMonths = require('./data/shamsi.json'),
