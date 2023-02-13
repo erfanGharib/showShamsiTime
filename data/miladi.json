@@ -1,0 +1,50 @@
+[
+    {
+        "month": "Januaray",
+        "eq": "11 Dey - 11 Bahman"
+    },
+    {
+        "month": "February",
+        "eq": "12 Bahman - 9 Esfand"
+    },
+    {
+        "month": "March",
+        "eq": "10 Esfand - 11 Farvardin"
+    },
+    {
+        "month": "April",
+        "eq": "12 Farvardin - 10 Ordibehesht"
+    },
+    {
+        "month": "May",
+        "eq": "11 Ordibehesht - 10 Khordad"
+    },
+    {
+        "month": "June",
+        "eq": "11 Khordad - 9 Tir"
+    },
+    {
+        "month": "July",
+        "eq": "10 Tir - 9 Mordad"
+    },
+    {
+        "month": "August",
+        "eq": "10 Mordad - 9 Shahrivar"
+    },
+    {
+        "month": "September",
+        "eq": "10 Shahrivar - 8 Mehr"
+    },
+    {
+        "month": "October",
+        "eq": "9 Mehr - 9 Aban"
+    },
+    {
+        "month": "November",
+        "eq": "10 Aban - 9 Azar"
+    },
+    {
+        "month": "December",
+        "eq": "10 Azar - 10 Dey"
+    }
+]

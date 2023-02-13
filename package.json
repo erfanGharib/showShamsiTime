@@ -1,5 +1,5 @@
 {
-  "name": "showShamsiTime",
+  "name": "show_shamsi_time",
   "version": "1.0.0",
   "description": "show time in shamsi format",
   "main": "index.js",

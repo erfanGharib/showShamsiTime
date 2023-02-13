@@ -1,0 +1,50 @@
+[
+    {
+        "month": "Farvardin",
+        "eq": "21 March - 20 April"
+    },
+    {
+        "month": "Ordibehesht",
+        "eq": "21 April - 21 May"
+    },
+    {
+        "month": "Khordad",
+        "eq": "22 May - 21 June"
+    },
+    {
+        "month": "Tir",
+        "eq": "21 March - 20 April"
+    },
+    {
+        "month": "Mordad",
+        "eq": "23 April - 22 May"
+    },
+    {
+        "month": "Shahrivar",
+        "eq": "22 May - 22 June"
+    },
+    {
+        "month": "Mehr",
+        "eq": "23 June - 22 July"
+    },
+    {
+        "month": "Aban",
+        "eq": "23 July - 21 August"
+    },
+    {
+        "month": "Azar",
+        "eq": "21 August - 20 September"
+    },
+    {
+        "month": "Dey",
+        "eq": "22 September - 20 October"
+    },
+    {
+        "month": "Bahman",
+        "eq": "21 October - 19 November"
+    },
+    {
+        "month": "esfand",
+        "eq": "20 November - 20 December"
+    }
+]
