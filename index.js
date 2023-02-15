@@ -9,12 +9,12 @@ const date = new Date(),
       [filePath, exePath, argv2, argv3] = process.argv;
 
 switch (argv2) {
-    case '-m': {
+    case '--month': case '-m': {
         if (Number(argv3) <= 12) {
             console.log(
                 `${argv3}th Month of:`,
                 `\n- Shamsi: ${shamsiMonths[argv3].month}`,
-                `\n- Miladi: ${miladiMonths[argv3].month}, ${miladiMonths[argv3].month.substring(0, 3)}s`
+                `\n- Miladi: ${miladiMonths[argv3].month}, ${miladiMonths[argv3].month.substring(0, 3)}`
             );
         }
         else {
@@ -38,21 +38,33 @@ switch (argv2) {
         break;
     }
 
-    case '-d':
+    case '--day': case '-d': {
 
         break;
-    case '-y':
+    }
 
+    case '--syear': case '-sy': {
+        // convert shamsi year to miladi
+        console.log('Shamsi equivalent:', shamsi.jalaliToGregorian(Number(argv3), 11, 4)[0]);
         break;
-    case '-h': case ' ':
+    }
 
+    case '--myear': case '-my': {
+        // convert miladi year to shamsi
+        console.log('Miladi equivalent:', shamsi.gregorianToJalali(Number(argv3), 11, 4)[0]);
         break;
+    }
 
-    default:
+    case undefined: {
         console.log(
             `Date: ${shamsi.gregorianToJalali(date).join('/')}`,
             `\nTime: ${time}`
         );
         break;
+    }
+
+    case '--help': case '-h': default: {
+        console.log('help');
+        break;
+    }
 }
-// } 
