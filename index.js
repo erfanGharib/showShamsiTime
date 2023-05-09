@@ -1,5 +1,11 @@
 #!/usr/bin/env node
 
+const readline = require('readline');
+const rl = readline.Interface(
+    process.stdin,
+    process.stdout,
+);
+
 const shamsi       = require('shamsi-date-converter'),
       shamsiMonths = require('./data/shamsi.json'),
       miladiMonths = require('./data/miladi.json');
@@ -7,6 +13,17 @@ const shamsi       = require('shamsi-date-converter'),
 const date = new Date(),
       time = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`,
       [filePath, exePath, argv2, argv3] = process.argv;
+
+const days = [
+    '',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+    'Sunday',
+]
 
 switch (argv2) {
     case '--month': case '-m': {
@@ -57,7 +74,7 @@ switch (argv2) {
 
     case undefined: {
         console.log(
-            `Date: ${shamsi.gregorianToJalali(date).join('/')}`,
+            `Date: ${shamsi.gregorianToJalali(date).join('/')} - ${shamsiMonths[shamsi.gregorianToJalali(date)[1]-1].month}, ${days[date.getDay()]}`,
             `\nTime: ${time}`
         );
         break;
@@ -68,3 +85,7 @@ switch (argv2) {
         break;
     }
 }
+
+rl.question('\nPress any key to continue...', () =>
+    rl.close()
+)
